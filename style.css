@@ -1,37 +1,47 @@
 main {
     max-width: 350px;
     background-color: var(--white);
-    /* display: flex; */
-    /* flex-direction: row; */
+    border-radius: 10px 10px;
+    overflow: hidden;
+    margin: auto;
 
-    /* margin:auto; */ 
-    border: 1px solid red;
 }
 
 
+/* .image-product {
+    width: 100%;
+    height: 100%;  
+
+} */
 .image-area {
     width: 100%;
-    /* height: 45%; */
+    height: 300px;
+    background-repeat: no-repeat;
+    /* Impede que a imagem se repita */
+    background-position: center;
+    /* Centraliza a imagem horizontalmente */
+    background-size: cover;
+    background-image: url("./images/image-product-mobile.jpg");
 }
 
-.image-product {
-    width: 100%;
-    /* height: 100%; */
-}
+/* .image-area>img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+} */
 
-.info-area{
+.info-area {
     background-color: var(--white);
-    /* border: 10px solid green; */
-    padding: 10px;
-    margin: 5px;
-    /* height: 55%; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 p.product-category {
-    /* font-family: 'Montserrat', sans-serif; */
     text-transform: uppercase;
     letter-spacing: 6px;
-    padding-bottom:  10px;;
+    padding-bottom: 10px;
     color: var(--dark-grayish-blue);
 }
 
@@ -41,19 +51,52 @@ p.product-category {
     line-height: 1.5em;
     font-weight: 500;
     color: var(--dark-grayish-blue);
-    /* margin: 10px ; */
     text-align: left;
-    
+    margin: 5px;
 
 }
-.product-name{
+
+.product-name {
     line-height: 1em;
     margin: 5px 2px 14px 2px;
 }
 
-/* --white
---dark-cyan
---cream
---very-dark-blue
---dark-grayish-blue
---white */
+.product-prices {
+    display: flex;
+    min-width: 63%;
+     /* padding: 13px 0 12px 0;  */
+    justify-content: space-between; 
+    align-items: center;
+    
+
+}
+
+.product-price {
+    /* font: bolder "Fraunces", sans-serif; */
+    font: bold 32px/1.2 "Fraunces", serif;
+    color: var(--dark-cyan);
+    
+}
+
+.product-old-price {
+    text-decoration: line-through;
+    font-size: 14px;
+    color: var(--dark-grayish-blue);
+
+}
+
+button {
+    display: block;
+    align-self: center;
+    height: 2.8em;
+    font: 16px "Fraunces", sans-serif;
+    background-color: var(--dark-cyan);
+    background-image: url("./images/icon-cart.svg");
+    background-repeat: no-repeat;
+    background-position: 85px center;
+    /* background-size: 1em; */
+    color: var(--white);
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px
+}

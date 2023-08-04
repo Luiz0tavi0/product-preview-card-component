@@ -30,7 +30,7 @@ main {
 p.product-category {
     margin-top: .3em;
     text-transform: uppercase;
-    letter-spacing: .5em;
+    letter-spacing: .25em;
     padding-bottom: 10px;
     color: var(--dark-grayish-blue);
 }
